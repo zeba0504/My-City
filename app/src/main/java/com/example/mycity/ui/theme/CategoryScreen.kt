@@ -143,11 +143,12 @@ fun PlaceCard(
                 Row(
                     verticalAlignment = Alignment.CenterVertically
                 ) {
-                    Icon(
-                        imageVector = Icons.Default.Star,
+                    Text(
+                        text = "Посоветовали",
+                        /*imageVector = Icons.Default.Star,
                         contentDescription = "Рейтинг",
                         tint = Color(0xFFFFA000),
-                        modifier = Modifier.size(20.dp)
+                        modifier = Modifier.size(20.dp)*/
                     )
                     Text(
                         text = place.rating.toString(),
@@ -157,7 +158,7 @@ fun PlaceCard(
                         modifier = Modifier.padding(start = 4.dp)
                     )
                     Text(
-                        text = "/5",
+                        text = "",
                         style = MaterialTheme.typography.bodyMedium,
                         color = Color.Gray,
                         fontSize = 14.sp,

@@ -211,7 +211,7 @@ fun ExpandedPlaceItem(
                     fontWeight = FontWeight.Medium
                 )
                 Text(
-                    text = "★ ${place.rating}/5",
+                    text = "Посоветовали: ${place.rating}",
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                     fontSize = 14.sp
                 )
@@ -246,7 +246,7 @@ fun ExpandedDetailScreen(place: Place) {
             )
 
             Text(
-                text = "★ ${place.rating}/5",
+                text = "Посоветовали: ${place.rating}",
                 modifier = Modifier.padding(vertical = 8.dp),
                 color = MaterialTheme.colorScheme.primary,
                 fontWeight = FontWeight.Medium
